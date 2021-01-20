@@ -57,8 +57,6 @@ public class program {
                     System.out.println("File contains: " + fileActions.linereader(file3) + " lines.");
                     
 
-
-
                 case 999: 
                     runtime = false;
                     break;
