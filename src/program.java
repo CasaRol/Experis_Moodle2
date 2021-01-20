@@ -15,13 +15,17 @@ public class program {
         while(runtime) {
             System.out.println("Please select one of the following options: ");
             System.out.println("1: List the files you are able to play with.");
-            System.out.println("2: List the size of a specific file");
-            
+            System.out.println("2: Get the size of a specific file");
+            System.out.println("3: Get the number of lines withing the file");
+            System.out.println("4: Search a file for a specific word");
+            System.out.println("5: Get count of how many times a certain word appears in the file");
+            System.out.println("");    
 
             System.out.println("999: Exit program");
 
             Scanner scan = new Scanner(System.in);
-            switch(scan.nextInt()) {
+            int choise = scan.nextInt();
+            switch(choise) {
                 case 1:
                     
                     for (String file1 : fileActions.directoryfiles()) {
@@ -58,14 +62,10 @@ public class program {
                     
 
                 case 999: 
-                    runtime = false;
-                    break;
-
+                    System.exit(0);
+                    break; //doesn't reach it but good practice to inclune anyways.
 
             }
-
-            scan.close();
-            System.exit(0);
         }
     }
 }
