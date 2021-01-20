@@ -42,9 +42,10 @@ public class program {
                     System.out.println("Remember to also include the file extension: ");
 
 
-                    Scanner scanning =  new Scanner(System.in);
-                    String file = scanning.nextLine();
+                    scan =  new Scanner(System.in);
+                    String file = scan.nextLine();
                     System.out.println("File " + file + " has the size of: " + fileActions.fileSize(file) + " bytes.");
+                    
                     break;
 
                 case 3: 
@@ -55,11 +56,30 @@ public class program {
                     System.out.println("Please enter the filename (Hint: file options listed in console)");
                     System.out.println("Remember to also include the file extension: ");
 
-                    Scanner scanner =  new Scanner(System.in);
-                    String file3 = scanner.nextLine();
+                    scan =  new Scanner(System.in);
+                    String file3 = scan.nextLine();
 
                     System.out.println("File contains: " + fileActions.linereader(file3) + " lines.");
                     
+                    break;
+                case 4:
+                    for (String file4 : fileActions.directoryfiles()) {
+                        System.out.println(file4);    
+                    }
+                
+                    System.out.println("Please enter the filename (Hint: file options listed in console)");
+                    System.out.println("Remember to also include the file extension: ");
+
+                    scan = new Scanner(System.in);
+
+                    String fileName = scan.nextLine();
+
+                    System.out.println("please enter the word you want to search for: ");
+                    String word = scan.nextLine();
+
+                    System.out.println(fileActions.searchWord(fileName, word));
+
+                    break;
 
                 case 999: 
                     System.exit(0);

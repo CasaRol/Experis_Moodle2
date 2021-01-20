@@ -44,8 +44,8 @@ public class Actions {
     public int linereader(String fileName) {
 
         int lines = 0;
-        try(BufferedReader bufRead = new BufferedReader(new FileReader("src/assets/" + fileName))) {
-            while(bufRead.readLine() != null) {
+        try (BufferedReader bufRead = new BufferedReader(new FileReader("src/assets/" + fileName))) {
+            while (bufRead.readLine() != null) {
                 lines++;
             }
 
@@ -54,5 +54,23 @@ public class Actions {
         }
 
         return lines;
+    }
+
+    public boolean searchWord(String fileName, String word) {
+
+        try (BufferedReader bufRead = new BufferedReader(new FileReader("src/assets/" + fileName))) {
+            String line;
+            while ((line = bufRead.readLine()) != null) {
+                if (line.contentEquals(word)) {
+                    return true;
+                }
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return false;
     }
 }
