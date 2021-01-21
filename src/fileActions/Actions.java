@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Actions {
 
-    public String[] directoryfiles() {
+    private String[] directoryfiles() {
 
         String[] result;
 
@@ -24,7 +24,7 @@ public class Actions {
         return result;
     }
 
-    public double fileSize(String fileName) {
+    private double fileSize(String fileName) {
 
         final String FILE_PATH = ("src/assets/" + fileName);
 
@@ -41,7 +41,7 @@ public class Actions {
         return (myFile.length() / 1024);
     }
 
-    public int linereader(String fileName) {
+    private int linereader(String fileName) {
 
         int lines = 0;
         try (BufferedReader bufRead = new BufferedReader(new FileReader("src/assets/" + fileName))) {
@@ -56,12 +56,12 @@ public class Actions {
         return lines;
     }
 
-    public boolean searchWord(String fileName, String word) {
+    private boolean searchWord(String fileName, String word) {
 
         try (BufferedReader bufRead = new BufferedReader(new FileReader("src/assets/" + fileName))) {
             String line;
             while ((line = bufRead.readLine()) != null) {
-                if (line.contentEquals(word)) {
+                if (line.toLowerCase().contains(word)) {
                     return true;
                 }
 
@@ -72,5 +72,46 @@ public class Actions {
         }
 
         return false;
+    }
+
+    private int wordcount(String fileName, String word) {
+        int wordCount = 0;
+
+        try (BufferedReader bufRead = new BufferedReader(new FileReader("src/assets/" + fileName))) {
+            
+            String line;
+            while ((line = bufRead.readLine()) != null) {
+                if (line.toLowerCase().contains(word)) {
+                    wordCount++;
+                }
+
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return wordCount;
+        
+    }
+
+    public String[] getDirectoryFiles() {
+        return directoryfiles();
+    }
+
+    public double getFileSize(String fileName) {
+        return fileSize(fileName);
+    }
+
+    public int getLinereader(String fileName) {
+        return linereader(fileName);
+    }
+
+    public boolean getSearchWord(String fileName, String word) {
+        return searchWord(fileName, word);
+    }
+
+    public int getWordcount(String fileName, String word) {
+        return wordcount(fileName, word);
     }
 }

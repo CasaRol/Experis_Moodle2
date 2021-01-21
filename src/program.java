@@ -13,6 +13,7 @@ public class program {
         Actions fileActions = new Actions();
 
         while(runtime) {
+            System.out.println("_________________________________________________________");
             System.out.println("Please select one of the following options: ");
             System.out.println("1: List the files you are able to play with.");
             System.out.println("2: Get the size of a specific file");
@@ -28,13 +29,13 @@ public class program {
             switch(choise) {
                 case 1:
                     
-                    for (String file1 : fileActions.directoryfiles()) {
+                    for (String file1 : fileActions.getDirectoryFiles()) {
                         System.out.println(file1);    
                     }
                     break;
 
                 case 2:
-                    for (String file2 : fileActions.directoryfiles()) {
+                    for (String file2 : fileActions.getDirectoryFiles()) {
                         System.out.println(file2);    
                     }
                 
@@ -44,12 +45,12 @@ public class program {
 
                     scan =  new Scanner(System.in);
                     String file = scan.nextLine();
-                    System.out.println("File " + file + " has the size of: " + fileActions.fileSize(file) + " bytes.");
+                    System.out.println("File " + file + " has the size of: " + fileActions.getFileSize(file) + " bytes.");
                     
                     break;
 
                 case 3: 
-                    for (String file3 : fileActions.directoryfiles()) {
+                    for (String file3 : fileActions.getDirectoryFiles()) {
                         System.out.println(file3);    
                     }
                 
@@ -59,11 +60,11 @@ public class program {
                     scan =  new Scanner(System.in);
                     String file3 = scan.nextLine();
 
-                    System.out.println("File contains: " + fileActions.linereader(file3) + " lines.");
+                    System.out.println("File contains: " + fileActions.getLinereader(file3) + " lines.");
                     
                     break;
                 case 4:
-                    for (String file4 : fileActions.directoryfiles()) {
+                    for (String file4 : fileActions.getDirectoryFiles()) {
                         System.out.println(file4);    
                     }
                 
@@ -77,9 +78,30 @@ public class program {
                     System.out.println("please enter the word you want to search for: ");
                     String word = scan.nextLine();
 
-                    System.out.println(fileActions.searchWord(fileName, word));
+                    System.out.println(fileActions.getSearchWord(fileName, word));
 
                     break;
+
+                case 5:
+                    
+                    for (String file4 : fileActions.getDirectoryFiles()) {
+                        System.out.println(file4);    
+                    }
+                
+                    System.out.println("Please enter the filename (Hint: file options listed in console)");
+                    System.out.println("Remember to also include the file extension: ");
+
+                    scan = new Scanner(System.in);
+
+                    String searchFile = scan.nextLine();
+
+                    System.out.println("please enter the word you want to search for: ");
+                    String searchWord = scan.nextLine();
+
+                    System.out.println("The word: " + searchWord + " appeared " + fileActions.getWordcount(searchFile, searchWord) + " times");
+
+                    break;
+                
 
                 case 999: 
                     System.exit(0);
