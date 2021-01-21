@@ -96,7 +96,7 @@ public class program {
                     String searchFile = scan.nextLine();
 
                     System.out.println("please enter the word you want to search for: ");
-                    String searchWord = scan.nextLine();
+                    String searchWord = scan.nextLine().toLowerCase();
 
                     System.out.println("The word: " + searchWord + " appeared " + fileActions.getWordcount(searchFile, searchWord) + " times");
 
@@ -106,6 +106,9 @@ public class program {
                 case 999: 
                     System.exit(0);
                     break; //doesn't reach it but good practice to inclune anyways.
+
+                default:
+                    System.out.println("Invalid input!");
 
             }
         }
