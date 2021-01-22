@@ -31,23 +31,20 @@ public class program {
             switch(choise) {
                 case 1:
                     
-                    for (String dir : fileActions.getDirectoryFiles()) {
-                        System.out.println(dir);    
-                    }
-
+                    //Calling void method which prints result to console;
+                    fileActions.directoryfiles();
+                        
                     updateLog.update("User requested a list of files in directory");
 
                     break;
 
                 case 2:
-                    for (String dir : fileActions.getDirectoryFiles()) {
-                        System.out.println(dir);    
-                    }
+                    fileActions.directoryfiles();
                 
                     System.out.println("Please enter the filename (Hint: file options listed in console)");
                     System.out.println("Remember to also include the file extension: ");
 
-
+                    
                     scan =  new Scanner(System.in);
                     String file = scan.nextLine();
                     String sizeResult = "File " + file + " has the size of: " + fileActions.getFileSize(file) + " bytes.";
@@ -58,13 +55,12 @@ public class program {
                     break;
 
                 case 3: 
-                    for (String dir : fileActions.getDirectoryFiles()) {
-                        System.out.println(dir);    
-                    }
+                    fileActions.directoryfiles();
                 
                     System.out.println("Please enter the filename (Hint: file options listed in console)");
                     System.out.println("Remember to also include the file extension: ");
 
+                    
                     scan =  new Scanner(System.in);
                     String file3 = scan.nextLine();
 
@@ -75,13 +71,12 @@ public class program {
                     
                     break;
                 case 4:
-                    for (String dir : fileActions.getDirectoryFiles()) {
-                        System.out.println(dir);    
-                    }
+                    fileActions.directoryfiles();
                 
                     System.out.println("Please enter the filename (Hint: file options listed in console)");
                     System.out.println("Remember to also include the file extension: ");
 
+                    
                     scan = new Scanner(System.in);
 
                     String fileName = scan.nextLine();
@@ -100,9 +95,7 @@ public class program {
 
                 case 5:
                     
-                    for (String dir : fileActions.getDirectoryFiles()) {
-                        System.out.println(dir);    
-                    }
+                    fileActions.directoryfiles();
                 
                     System.out.println("Please enter the filename (Hint: file options listed in console)");
                     System.out.println("Remember to also include the file extension: ");
@@ -125,8 +118,9 @@ public class program {
 
                 case 999: 
                     updateLog.update("User exited program...");
+                    scan.close();
                     System.exit(0);
-                    break; //doesn't reach it but good practice to inclune anyways.
+                    break; //doesn't reach it but good practice to include anyways.
 
                 default:
                     System.out.println("Invalid input!");

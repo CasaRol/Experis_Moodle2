@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Actions {
 
-    private String[] directoryfiles() {
+    public void directoryfiles() {
 
         String[] result;
 
@@ -19,9 +19,9 @@ public class Actions {
 
         result = directoryContent.list();
 
-        System.out.println(result);
-
-        return result;
+        for (String dir : result) {
+            System.out.println(dir);    
+        }
     }
 
     private double fileSize(String fileName) {
@@ -93,10 +93,6 @@ public class Actions {
 
         return wordCount;
         
-    }
-
-    public String[] getDirectoryFiles() {
-        return directoryfiles();
     }
 
     public double getFileSize(String fileName) {
