@@ -1,4 +1,3 @@
-import java.io.File;
 import java.util.Scanner;
 
 import fileActions.Actions;
@@ -32,8 +31,8 @@ public class program {
             switch(choise) {
                 case 1:
                     
-                    for (String file1 : fileActions.getDirectoryFiles()) {
-                        System.out.println(file1);    
+                    for (String dir : fileActions.getDirectoryFiles()) {
+                        System.out.println(dir);    
                     }
 
                     updateLog.update("User requested a list of files in directory");
@@ -41,8 +40,8 @@ public class program {
                     break;
 
                 case 2:
-                    for (String file2 : fileActions.getDirectoryFiles()) {
-                        System.out.println(file2);    
+                    for (String dir : fileActions.getDirectoryFiles()) {
+                        System.out.println(dir);    
                     }
                 
                     System.out.println("Please enter the filename (Hint: file options listed in console)");
@@ -59,8 +58,8 @@ public class program {
                     break;
 
                 case 3: 
-                    for (String file3 : fileActions.getDirectoryFiles()) {
-                        System.out.println(file3);    
+                    for (String dir : fileActions.getDirectoryFiles()) {
+                        System.out.println(dir);    
                     }
                 
                     System.out.println("Please enter the filename (Hint: file options listed in console)");
@@ -76,8 +75,8 @@ public class program {
                     
                     break;
                 case 4:
-                    for (String file4 : fileActions.getDirectoryFiles()) {
-                        System.out.println(file4);    
+                    for (String dir : fileActions.getDirectoryFiles()) {
+                        System.out.println(dir);    
                     }
                 
                     System.out.println("Please enter the filename (Hint: file options listed in console)");
@@ -101,8 +100,8 @@ public class program {
 
                 case 5:
                     
-                    for (String file4 : fileActions.getDirectoryFiles()) {
-                        System.out.println(file4);    
+                    for (String dir : fileActions.getDirectoryFiles()) {
+                        System.out.println(dir);    
                     }
                 
                     System.out.println("Please enter the filename (Hint: file options listed in console)");
@@ -125,6 +124,7 @@ public class program {
                 
 
                 case 999: 
+                    updateLog.update("User exited program...");
                     System.exit(0);
                     break; //doesn't reach it but good practice to inclune anyways.
 

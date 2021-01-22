@@ -1,1 +1,7 @@
 
+21-01-2021 16:11:38: User requested a list of files in directory
+21-01-2021 16:11:49: File Meme_9.jfif has the size of: 7.0 bytes.
+21-01-2021 16:11:59: File contains: 65 lines.
+21-01-2021 16:12:19: Search for blue resulted in: false!
+21-01-2021 16:12:40: The word: blue appeared 0 times
+21-01-2021 16:14:22: User exited program...
