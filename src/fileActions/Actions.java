@@ -11,11 +11,13 @@ import java.util.Scanner;
  */
 public class Actions {
 
+    String localDir = System.getProperty("user.dir");
+
     public void directoryfiles() {
 
         String[] result;
 
-        File directoryContent = new File("src/assets");
+        File directoryContent = new File(localDir + File.separator + "src/assets");
 
         result = directoryContent.list();
 
@@ -26,7 +28,7 @@ public class Actions {
 
     private double fileSize(String fileName) {
 
-        final String FILE_PATH = ("src/assets/" + fileName);
+        final String FILE_PATH = (localDir + File.separator + "src/assets/" + fileName);
 
         File myFile = new File(FILE_PATH);
 
@@ -44,7 +46,7 @@ public class Actions {
     private int linereader(String fileName) {
 
         int lines = 0;
-        try (BufferedReader bufRead = new BufferedReader(new FileReader("src/assets/" + fileName))) {
+        try (BufferedReader bufRead = new BufferedReader(new FileReader(localDir + File.separator + "src/assets/" + fileName))) {
             while (bufRead.readLine() != null) {
                 lines++;
             }
@@ -58,7 +60,7 @@ public class Actions {
 
     private boolean searchWord(String fileName, String word) {
 
-        try (BufferedReader bufRead = new BufferedReader(new FileReader("src/assets/" + fileName))) {
+        try (BufferedReader bufRead = new BufferedReader(new FileReader(localDir + File.separator + "src/assets/" + fileName))) {
             String line;
             while ((line = bufRead.readLine()) != null) {
                 if (line.toLowerCase().contains(word)) {
@@ -77,7 +79,7 @@ public class Actions {
     private int wordcount(String fileName, String word) {
         int wordCount = 0;
 
-        try (BufferedReader bufRead = new BufferedReader(new FileReader("src/assets/" + fileName))) {
+        try (BufferedReader bufRead = new BufferedReader(new FileReader(localDir + File.separator + "src/assets/" + fileName))) {
             
             String line;
             while ((line = bufRead.readLine()) != null) {
