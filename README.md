@@ -1,8 +1,8 @@
-# Experis Academy - ## File Manipulation Application
+# Experis Academy - File Manipulation Application
 
 This is the first hand-in for Experis Academy taught by Noroff.
 
-![Running in git-bash](https://raw.githubusercontent.com/CasaRol/Experis_Moodle2/main/src/Screenshots/Running_bash.png)
+![Running in git-bash](https://github.com/CasaRol/Experis_Moodle2/blob/main/src/Screenshots/Running_bash.png)
 
 The application here is a simple fil manipulator which takes an argument as to which file to look at 
 and then outputs one of the selectable functions: 
@@ -14,6 +14,14 @@ and then outputs one of the selectable functions:
 
 ### How This project is made
 
-This project has been made using Visual Studio Code in order to learn how a normal IDE (Integraded Development Environment) handles files and folders/packages.
-This means that every single project file has been manually compilled using the terminal/CMD for the exstra learning experience as to how to create an executable Jar-file.
+This project has been made using Visual Studio Code in order to learn how a normal IDE (Integraded Development Environment) handles files and folders/packages.  
+This means that every single project file has been manually compilled using the terminal/CMD for the exstra learning experience as to how to create an executable JAR-file.  
+
+### How to manually create a JAR-file
+
+First is to open the terminal and go to your root of your project.  
+Then you want to compile every single java-file in the project using only one command like shown below.  
+Make sure to also specify a folder for where to put the compiled files like here where I specify /out to be the endpoint.   
+
+![Compiling java-files to class-files](https://github.com/CasaRol/Experis_Moodle2/blob/main/src/Screenshots/javac.png)
 
