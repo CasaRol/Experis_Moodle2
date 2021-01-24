@@ -27,14 +27,20 @@ public class program {
             System.out.println("999: Exit program");
 
             Scanner scan = new Scanner(System.in);
+
+            double timeBefore = 0;
+            double timeAfter = 0;
+
             int choise = scan.nextInt();
             switch(choise) {
                 case 1:
                     
                     //Calling void method which prints result to console;
+                    timeBefore = System.currentTimeMillis();
                     fileActions.directoryfiles();
+                    timeAfter = System.currentTimeMillis();
                         
-                    updateLog.update("User requested a list of files in directory");
+                    updateLog.update("User requested a list of files in directory", (timeAfter - timeBefore));
 
                     break;
 
@@ -47,9 +53,12 @@ public class program {
                     
                     scan =  new Scanner(System.in);
                     String file = scan.nextLine();
-                    String sizeResult = "File " + file + " has the size of: " + fileActions.getFileSize(file) + " bytes.";
 
-                    updateLog.update(sizeResult);
+                    timeBefore = System.currentTimeMillis();
+                    String sizeResult = "File " + file + " has the size of: " + fileActions.getFileSize(file) + " bytes";
+                    timeAfter = System.currentTimeMillis();
+
+                    updateLog.update(sizeResult, (timeAfter - timeBefore));
                     System.out.println(sizeResult);
                     
                     break;
@@ -64,9 +73,11 @@ public class program {
                     scan =  new Scanner(System.in);
                     String file3 = scan.nextLine();
 
+                    timeBefore = System.currentTimeMillis();
                     String lineResult = "File contains: " + fileActions.getLinereader(file3) + " lines.";
+                    timeAfter = System.currentTimeMillis();
 
-                    updateLog.update(lineResult);
+                    updateLog.update(lineResult, (timeAfter - timeBefore));
                     System.out.println(lineResult);
                     
                     break;
@@ -84,9 +95,11 @@ public class program {
                     System.out.println("please enter the word you want to search for: ");
                     String word = scan.nextLine();
 
+                    timeBefore = System.currentTimeMillis();
                     String wordSearch = "Search for " + word + " resulted in: " + fileActions.getSearchWord(fileName, word) + "!";
+                    timeAfter = System.currentTimeMillis();
 
-                    updateLog.update(wordSearch);
+                    updateLog.update(wordSearch, (timeAfter - timeBefore));
 
                     System.out.println(wordSearch);
 
@@ -107,9 +120,11 @@ public class program {
                     System.out.println("please enter the word you want to search for: ");
                     String searchWord = scan.nextLine().toLowerCase();
 
+                    timeBefore = System.currentTimeMillis();
                     String wordCountResult = "The word: " + searchWord + " appeared " + fileActions.getWordcount(searchFile, searchWord) + " times";
+                    timeAfter = System.currentTimeMillis();
 
-                    updateLog.update(wordCountResult);
+                    updateLog.update(wordCountResult, (timeAfter - timeBefore));
 
                     System.out.println(wordCountResult);
 
@@ -117,7 +132,7 @@ public class program {
                 
 
                 case 999: 
-                    updateLog.update("User exited program...");
+                    updateLog.update("User exited program...", 0);
                     scan.close();
                     System.exit(0);
                     break; //doesn't reach it but good practice to include anyways.

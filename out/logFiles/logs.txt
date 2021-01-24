@@ -1,44 +1,14 @@
-
-21-01-2021 16:11:38: User requested a list of files in directory
-21-01-2021 16:11:49: File Meme_9.jfif has the size of: 7.0 bytes.
-21-01-2021 16:11:59: File contains: 65 lines.
-21-01-2021 16:12:19: Search for blue resulted in: false!
-21-01-2021 16:12:40: The word: blue appeared 0 times
-21-01-2021 16:14:22: User exited program...
-22-01-2021 09:01:41: User requested a list of files in directory
-22-01-2021 09:01:52: File Meme_9.jfif has the size of: 7.0 bytes.
-22-01-2021 09:21:33: User exited program...
-22-01-2021 09:22:02: Search for blue resulted in: false!
-22-01-2021 09:24:10: User requested a list of files in directory
-22-01-2021 09:24:12: File  has the size of: 4.0 bytes.
-22-01-2021 09:24:57: User exited program...
-22-01-2021 09:30:11: Search for blue resulted in: false!
-22-01-2021 13:37:16: User exited program...
-22-01-2021 13:38:55: User exited program...
-22-01-2021 13:48:00: The word: sleeping appeared 32 times
-22-01-2021 13:48:30: User exited program...
-22-01-2021 13:51:41: The word: sleeping, appeared 7 times
-22-01-2021 13:52:06: The word: unavailingness appeared 1 times
-22-01-2021 15:19:21: User exited program...
-22-01-2021 15:19:41: User requested a list of files in directory
-22-01-2021 15:57:27: User exited program...
-22-01-2021 15:58:17: User requested a list of files in directory
-22-01-2021 15:59:05: User requested a list of files in directory
-22-01-2021 15:59:13: File Meme_9.jfif has the size of: 7.0 bytes.
-22-01-2021 15:59:30: The word: sleeping appeared 32 times
-22-01-2021 15:59:40: User exited program...
-22-01-2021 16:21:17: User requested a list of files in directory
-22-01-2021 16:22:47: User exited program...
-22-01-2021 16:23:17: User requested a list of files in directory
-22-01-2021 16:24:46: User exited program...
-22-01-2021 16:24:49: User requested a list of files in directory
-22-01-2021 16:34:56: User exited program...
-22-01-2021 16:37:19: User requested a list of files in directory
-22-01-2021 16:37:32: User exited program...
-22-01-2021 16:51:01: User requested a list of files in directory
-22-01-2021 16:51:11: User exited program...
-22-01-2021 16:54:52: User requested a list of files in directory
-22-01-2021 16:55:03: User exited program...
-22-01-2021 17:27:06: User requested a list of files in directory
-22-01-2021 17:27:15: File Meme_9.jfif has the size of: 7.0 bytes.
-22-01-2021 17:35:20: User exited program...
+24-01-2021 19:36:05: User requested a list of files in directory - Computation took 36.0ms
+24-01-2021 19:36:15: File Meme_9.jfif has the size of: 7.0 bytes. - Computation took 6.0ms
+24-01-2021 19:36:36: The word: sleeping appeared 32 times - Computation took 44.0ms
+24-01-2021 19:36:46: User requested a list of files in directory - Computation took 1.0ms
+24-01-2021 19:36:46: User requested a list of files in directory - Computation took 1.0ms
+24-01-2021 19:36:46: User requested a list of files in directory - Computation took 1.0ms
+24-01-2021 19:36:46: User requested a list of files in directory - Computation took 0.0ms
+24-01-2021 19:36:47: User requested a list of files in directory - Computation took 1.0ms
+24-01-2021 19:36:47: User requested a list of files in directory - Computation took 1.0ms
+24-01-2021 19:36:47: User requested a list of files in directory - Computation took 0.0ms
+24-01-2021 19:36:50: User requested a list of files in directory - Computation took 1.0ms
+24-01-2021 19:36:51: User requested a list of files in directory - Computation took 1.0ms
+24-01-2021 19:37:10: The word: blue appeared 0 times - Computation took 10.0ms
+24-01-2021 19:37:17: User exited program... - Computation took 0.0ms

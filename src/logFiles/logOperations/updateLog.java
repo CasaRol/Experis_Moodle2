@@ -11,7 +11,7 @@ public class updateLog {
 
     String localDir = System.getProperty("user.dir");
 
-    public boolean update(String update) {
+    public boolean update(String update, double duration) {
         File file = new File(localDir + File.separator + "logFiles/logs.txt");
         try(BufferedWriter bufWrite = new BufferedWriter(new FileWriter(file, true))) {
 
@@ -19,7 +19,7 @@ public class updateLog {
                 file = new File(localDir + File.separator + "logFiles/logs.txt");
             }
 
-            bufWrite.write(dateTime.getDateTime() + ": " + update + "\n");
+            bufWrite.write(dateTime.getDateTime() + ": " + update + " - Computation took " + duration + "ms\n");
             bufWrite.flush();
 
         } catch(FileNotFoundException fnf) {
