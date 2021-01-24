@@ -25,3 +25,26 @@ Make sure to also specify a folder for where to put the compiled files like here
 
 ![Compiling java-files to class-files](https://github.com/CasaRol/Experis_Moodle2/blob/main/src/Screenshots/javac.png)
 
+* Note that I'm using the astrix symbol. This is in order to take all files with a .java extention withing a certain folder and compile them all without calling every single file.  
+
+After that we want to go to our new out folder with the CD command:  
+
+![cd out](https://github.com/CasaRol/Experis_Moodle2/blob/main/src/Screenshots/cd_out.png)
+
+* This command lets us enter the newly created folder out.  
+After that the creation of the JAR-file begins with the following command:  
+
+![Creating JAR-file](https://github.com/CasaRol/Experis_Moodle2/blob/main/src/Screenshots/jar_cfe.png)
+
+* Using this command we tell teh computer which files we want to be compiled into teh JAR-file aswell as specifying what to call the JAR-file and which java class is the main class for the entire project. 
+* If this command runs without errors there should appear a new JAR-file which can be run via the terminal/CMD using the following command:  
+
+![Run JAR-file](https://github.com/CasaRol/Experis_Moodle2/blob/main/src/Screenshots/jar.png)
+
+* From here it is just to have fun running the program and check out all the files within the assets provided within the project!
+
+### Have fun!
+
+Please note: A compiled version is added within this GitHub Repository and you do therefor not need to compile the project yourself.  
+just navigate to the correct folder and run the last provided command and your should be good to go!
+
