@@ -9,12 +9,14 @@ import SystemTime.dateTime;
 
 public class updateLog {
 
+    String localDir = System.getProperty("user.dir");
+
     public boolean update(String update) {
-        File file = new File("src/logFiles/logs.txt");
+        File file = new File(localDir + File.separator + "logFiles/logs.txt");
         try(BufferedWriter bufWrite = new BufferedWriter(new FileWriter(file, true))) {
 
             if(!file.exists()) {
-                file = new File("src/logFiles/logs.txt");
+                file = new File(localDir + File.separator + "logFiles/logs.txt");
             }
 
             bufWrite.write(dateTime.getDateTime() + ": " + update + "\n");
