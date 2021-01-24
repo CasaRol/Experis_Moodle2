@@ -15,10 +15,12 @@ public class updateLog {
         File file = new File(localDir + File.separator + "logFiles/logs.txt");
         try(BufferedWriter bufWrite = new BufferedWriter(new FileWriter(file, true))) {
 
+            //Create new logfile if current doesn't exist
             if(!file.exists()) {
                 file = new File(localDir + File.separator + "logFiles/logs.txt");
             }
 
+            //Adding one line per log update NOT overriting existing file
             bufWrite.write(dateTime.getDateTime() + ": " + update + " - Computation took " + duration + "ms\n");
             bufWrite.flush();
 

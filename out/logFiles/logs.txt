@@ -12,3 +12,9 @@
 24-01-2021 19:36:51: User requested a list of files in directory - Computation took 1.0ms
 24-01-2021 19:37:10: The word: blue appeared 0 times - Computation took 10.0ms
 24-01-2021 19:37:17: User exited program... - Computation took 0.0ms
+24-01-2021 20:34:47: The word: blood appeared 0 times - Computation took 18.0ms
+24-01-2021 20:35:29: The word: blood appeared 116 times - Computation took 57.0ms
+24-01-2021 20:36:39: The word: mirror appeared 4 times - Computation took 24.0ms
+24-01-2021 20:37:53: The word: the appeared 7522 times - Computation took 13.0ms
+24-01-2021 20:38:56: The word: a appeared 12868 times - Computation took 10.0ms
+24-01-2021 20:46:13: User requested a list of files in directory - Computation took 0.0ms
