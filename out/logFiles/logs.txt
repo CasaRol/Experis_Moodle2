@@ -18,3 +18,7 @@
 24-01-2021 20:37:53: The word: the appeared 7522 times - Computation took 13.0ms
 24-01-2021 20:38:56: The word: a appeared 12868 times - Computation took 10.0ms
 24-01-2021 20:46:13: User requested a list of files in directory - Computation took 0.0ms
+24-01-2021 21:12:44: User requested a list of files in directory - Computation took 25.0ms
+24-01-2021 21:12:51: File Meme_9.jfif has the size of: 7.0 bytes - Computation took 40.0ms
+24-01-2021 21:13:11: The word: blood appeared 116 times - Computation took 45.0ms
+24-01-2021 21:13:16: User exited program... - Computation took 0.0ms
