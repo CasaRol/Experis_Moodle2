@@ -2,7 +2,7 @@
 
 This is the first hand-in for Experis Academy taught by Noroff.
 
-![Running in git-bash (https://raw.githubusercontent.com/CasaRol/Experis_Moodle2/main/src/Screenshots/Running_bash.png)]
+![Running in git-bash](https://raw.githubusercontent.com/CasaRol/Experis_Moodle2/main/src/Screenshots/Running_bash.png)
 
 The application here is a simple fil manipulator which takes an argument as to which file to look at 
 and then outputs one of the selectable functions: 
